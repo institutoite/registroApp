@@ -17,9 +17,13 @@ return new class extends Migration
             $table->string("apellidos",20);
             $table->date("fnacimiento");
             $table->string("telefono",8);
+            $table->string("descripcion",5000);
 
             $table->unsignedBigInteger("taller_id");
             $table->foreign("taller_id")->references("id")->on("tallers");
+            
+            $table->unsignedBigInteger("ciudad_id");
+            $table->foreign("ciudad_id")->references("id")->on("ciudads");
 
             $table->timestamps();
         });
