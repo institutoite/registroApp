@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Registrate</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="icon" href="{{ asset('image/ite.ico') }}" type="image/x-icon">
 		<!-- MATERIAL DESIGN ICONIC FONT -->
 		<link rel="stylesheet" href="{{ asset('colorib/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
 		
@@ -61,10 +61,9 @@
                 
                     <div class="socials">
                         <p>Síguenos en las redes sociales</p>
-                        <a href="https://www.facebook.com/ite.educabol" class="socials-icon"><i class="zmdi zmdi-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@ite_educabol" class="socials-icon"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/ite.educabol/" class="socials-icon"><i class="zmdi zmdi-instagram"></i></a>
-                        <a href="https://www.youtube.com/@ite_educabol" class="socials-icon"><i class="zmdi zmdi-youtube"></i></a>
+                        <a href="https://www.facebook.com/ite.educabol" target="_blanck" class="socials-icon"><i class="zmdi zmdi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@ite_educabol" target="_blanck" class="socials-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@ite_educabol" target="_blanck" class="socials-icon"><i class="zmdi zmdi-youtube"></i></a>
                     </div>
                 </form>
                 
