@@ -23,7 +23,7 @@
 				<form action="{{ route('personas.store') }}" method="POST">
                     @csrf
                     <div class="form-header">
-                        <h3>Registro para taller IA</h3>
+                        <h3>Regístrate</h3>
                         <img src="{{ asset('colorib/images/sign-up.png') }}" alt="" class="sign-up-icon">
                     </div>
                 
