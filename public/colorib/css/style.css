@@ -97,7 +97,7 @@ label {
   margin-top: 10px;
   display: inline-block; }
 
-button {
+.btn-login,button {
   border: none;
   width: 100%;
   height: 46px;

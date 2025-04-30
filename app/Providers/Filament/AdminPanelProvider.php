@@ -22,13 +22,26 @@ class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
+        // ->default()
+        // ->id('admin')
+        // ->font('Inter')
+        // ->brandName('Mi Aplicación')
+        // ->favicon(asset('images/favicon.png'))
+        // ->sidebarCollapsibleOnDesktop()
+        // ->topNavigation() // Opcional para menú superior
+     
         return $panel
             ->default()
             ->id('admin')
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => '#26baa5',
+                'gray' => '#6b7280',
+                'danger' => '#ef4444',
+                'info' => '#3b82f6',
+                'success' => '#10b981',
+                'warning' => '#f59e0b',
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')

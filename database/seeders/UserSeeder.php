@@ -15,11 +15,11 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        if (!User::where('email','admin@gmail.com')->exists()) {
+        if (!User::where('email','talleres@gmail.com')->exists()) {
             User::create([
-                'name' => 'admin',
-                'email' => 'admin@gmail.com',
-                'password' => Hash::make('12345678'), //cambia 'password' por tu contraseña preferida
+                'name' => 'talleres',
+                'email' => 'talleres@gmail.com',
+                'password' => Hash::make('OptPamEqui13'), //cambia 'password' por tu contraseña preferida
                 'email_verified_at' => now(),
             ]);
         }

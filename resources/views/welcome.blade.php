@@ -69,6 +69,8 @@
                 
                     <button type="submit">Registrar</button>
                 
+                    <a class="btn-login" href="{{ url('admin') }}">Login</a>
+
                     <div class="socials">
                         <p>Síguenos en las redes socialesx</p>
                         <a href="https://www.facebook.com/ite.educabol" target="_blanck" class="socials-icon"><i class="zmdi zmdi-facebook"></i></a>
