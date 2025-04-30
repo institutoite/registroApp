@@ -34,6 +34,7 @@ class PersonaController extends Controller
             'fnacimiento' => 'required|date',
             'telefono' => 'required|digits:8',
             'taller_id' => 'required|exists:tallers,id',
+            'ciudad_id' => 'required|exists:ciudads,id',
         ]);
 
         Persona::create($request->all());

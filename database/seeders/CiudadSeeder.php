@@ -14,10 +14,10 @@ class CiudadSeeder extends Seeder
     public function run(): void
     {
         $ciudades = [
-            ['ciudad' => 'Sucre'],      // Capital constitucional
+            ['ciudad' => 'Santa Cruz de la Sierra'],
             ['ciudad' => 'La Paz'],     // Sede de gobierno
             ['ciudad' => 'Cochabamba'],
-            ['ciudad' => 'Santa Cruz de la Sierra'],
+            ['ciudad' => 'Sucre'],      // Capital constitucional
             ['ciudad' => 'Oruro'],
             ['ciudad' => 'Potosí'],
             ['ciudad' => 'Tarija'],

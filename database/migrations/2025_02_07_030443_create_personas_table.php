@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\EstadoPersona;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,7 +18,9 @@ return new class extends Migration
             $table->string("apellidos",20);
             $table->date("fnacimiento");
             $table->string("telefono",8);
-            $table->string("descripcion",5000);
+            $table->string("descripcion",5000)->nullable();
+
+            $table->string('estado', 20)->default(EstadoPersona::IMPAGA->value)->comment('Posibles valores: impaga, pagada, pendiente, anulada, morosa');
 
             $table->unsignedBigInteger("taller_id");
             $table->foreign("taller_id")->references("id")->on("tallers");

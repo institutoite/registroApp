@@ -17,13 +17,14 @@
 
 		<div class="wrapper">
 			<div class="image-holder">
-				<img src="{{ asset('colorib/images/registration-form-8.jpg') }}" alt="">
+				<img src="{{ asset('colorib/images/registration-form-8.png') }}" alt="">
 			</div>
 			<div class="form-inner">
 				<form action="{{ route('personas.store') }}" method="POST">
                     @csrf
                     <div class="form-header">
                         <h3>Regístrate</h3>
+                        <p>¡Taller El Optimizador Pampeño y Equipat!</p>
                         <img src="{{ asset('colorib/images/sign-up.png') }}" alt="" class="sign-up-icon">
                     </div>
                 
@@ -56,11 +57,20 @@
                             @endforeach
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label for="taller_id">Ciudad:</label>
+                        <select name="taller_id" class="form-control" required>
+                            <option value="">Seleccione una ciudad</option>
+                            @foreach($ciudades as $ciudad)
+                                <option value="{{ $ciudad->id }}">{{ $ciudad->ciudad }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                 
                     <button type="submit">Registrar</button>
                 
                     <div class="socials">
-                        <p>Síguenos en las redes sociales</p>
+                        <p>Síguenos en las redes socialesx</p>
                         <a href="https://www.facebook.com/ite.educabol" target="_blanck" class="socials-icon"><i class="zmdi zmdi-facebook"></i></a>
                         <a href="https://www.tiktok.com/@ite_educabol" target="_blanck" class="socials-icon"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="https://www.youtube.com/@ite_educabol" target="_blanck" class="socials-icon"><i class="zmdi zmdi-youtube"></i></a>

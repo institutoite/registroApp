@@ -1,5 +1,6 @@
 <?php
-
+use App\Enums\EstadoCiudad;
+use App\Enums\EstadoPersona;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,10 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\PersonaController;
 use App\Models\Taller;
+use App\Models\Ciudad;
 
 Route::get('/', function () {
     $talleres=Taller::all();
-    return view('welcome',compact('talleres'));
+    $ciudades=Ciudad::where('estado', true)->get();
+    return view('welcome',compact('talleres','ciudades'));
 });
 
 

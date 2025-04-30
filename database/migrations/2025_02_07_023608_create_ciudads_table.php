@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('ciudads', function (Blueprint $table) {
             $table->id();
             $table->string("ciudad",25);
+            $table->boolean('estado')->default(false); // Cambia a booleano
             $table->timestamps();
         });
     }
