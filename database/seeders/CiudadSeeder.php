@@ -14,15 +14,15 @@ class CiudadSeeder extends Seeder
     public function run(): void
     {
         $ciudades = [
-            ['ciudad' => 'Santa Cruz de la Sierra'],
-            ['ciudad' => 'La Paz'],     // Sede de gobierno
-            ['ciudad' => 'Cochabamba'],
-            ['ciudad' => 'Sucre'],      // Capital constitucional
-            ['ciudad' => 'Oruro'],
-            ['ciudad' => 'Potosí'],
-            ['ciudad' => 'Tarija'],
-            ['ciudad' => 'Trinidad'],
-            ['ciudad' => 'Cobija']
+            ['ciudad' => 'Santa Cruz de la Sierra', 'estado' => true],
+            ['ciudad' => 'La Paz', 'estado' => false],     // Sede de gobierno
+            ['ciudad' => 'Cochabamba', 'estado' => false],
+            ['ciudad' => 'Sucre', 'estado' => false],      // Capital constitucional
+            ['ciudad' => 'Oruro', 'estado' => false],
+            ['ciudad' => 'Potosí', 'estado' => false],
+            ['ciudad' => 'Tarija', 'estado' => false],
+            ['ciudad' => 'Trinidad', 'estado' => false],
+            ['ciudad' => 'Cobija', 'estado' => false]
         ];
 
         DB::table('ciudads')->insert($ciudades);

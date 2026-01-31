@@ -207,7 +207,7 @@
                             <option value="">Seleccione un taller</option>
                             @foreach($talleres as $taller)
                                 <option value="{{ $taller->id }}" @if(!$taller->estado) disabled @endif>
-                                    {{ $taller->taller }}@if(!$taller->estado) (No habilitado)@endif
+                                    {{ $taller->taller }}@if(!$taller->estado) (próximamente)@endif
                                 </option>
                             @endforeach
                         </select>
@@ -217,7 +217,9 @@
                         <select name="ciudad_id" class="form-control" required>
                             <option value="">Seleccione una ciudad</option>
                             @foreach($ciudades as $ciudad)
-                                <option value="{{ $ciudad->id }}">{{ $ciudad->ciudad }}</option>
+                                <option value="{{ $ciudad->id }}" @if(!$ciudad->estado) disabled @endif>
+                                    {{ $ciudad->ciudad }}@if(!$ciudad->estado) (Próximamente)@endif
+                                </option>
                             @endforeach
                         </select>
                     </div>

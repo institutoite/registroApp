@@ -19,7 +19,7 @@ use App\Models\Ciudad;
 
 Route::get('/', function () {
     $talleres=Taller::all();
-    $ciudades=Ciudad::where('estado', true)->get();
+    $ciudades=Ciudad::all();
     return view('welcome',compact('talleres','ciudades'));
 });
 
