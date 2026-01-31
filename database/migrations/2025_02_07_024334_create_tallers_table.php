@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("taller",50);
             $table->string("descripcion",2000);
+            $table->boolean("estado")->default(true);
             
             $table->timestamps();
         });

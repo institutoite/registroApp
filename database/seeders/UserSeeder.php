@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
             User::create([
                 'name' => 'talleres',
                 'email' => 'talleres@gmail.com',
-                'password' => Hash::make('OptPamEqui13'), //cambia 'password' por tu contraseña preferida
+                'password' => Hash::make('*lobacude1326*'), //cambia 'password' por tu contraseña preferida
                 'email_verified_at' => now(),
             ]);
         }
